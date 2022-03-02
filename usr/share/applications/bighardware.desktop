@@ -1,0 +1,21 @@
+[Desktop Entry]
+Categories=Utility;
+Comment[pt_BR]=
+Comment=
+Exec=/usr/share/biglinux/hardware-detection/kdialog-hardware-detection
+GenericName[pt_BR]=
+GenericName=
+Icon=system-help-symbolic
+MimeType=
+Name[pt_BR]=Procurar módulos e firmwares
+Name=Procurar módulos e firmwares
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-Shortcuts=Alt+V
+X-KDE-SubstituteUID=false
+X-KDE-Username=

@@ -1,0 +1,22 @@
+#!/bin/bash
+
+##############
+# Detect modules needed
+# By Bruno Goncalves < www.biglinux.com.br >
+# 2022/03/01
+# License GPL V2 or greater
+###############
+
+MODULE="$(./detectmodule.sh)"
+FIRMWARE="$(pkexec ./detectfirmware.sh)"
+
+if [ "$MODULE" = "" ]; then
+    MODULE=$"MÓDULO: Nenhum módulo precisa ser instalado."
+fi
+
+if [ "$FIRMWARE" = "" ]; then
+    FIRMWARE=$"FIRMWARE: Nenhum firmware precisa ser instalado."
+fi
+
+kdialog --msgbox "$MODULE
+$FIRMWARE" --title $"Hardware"
