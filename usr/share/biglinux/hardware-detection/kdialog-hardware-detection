@@ -8,7 +8,7 @@
 ###############
 
 MODULE="$(./detectmodule.sh)"
-FIRMWARE="$(pkexec ./detectfirmware.sh)"
+FIRMWARE="$(pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true ${1+"$@"} ./detectfirmware.sh)"
 
 if [ "$MODULE" = "" ]; then
     MODULE=$"MÓDULO: Nenhum módulo precisa ser instalado."
