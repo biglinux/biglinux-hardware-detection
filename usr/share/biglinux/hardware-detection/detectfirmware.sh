@@ -7,6 +7,8 @@
 # License GPL V2 or greater
 ###############
 
+cd /usr/share/biglinux/hardware-detection/
+
 OIFS=$IFS
 IFS=$'\n'
 
